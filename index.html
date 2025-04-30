@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Nicolas Zabala</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#Información">Información</a></li>
+                <li><a href="#conocimientos">Conocimientos</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#estudios">Estudios</a></li>
+                <li><a href="#footer">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="nombre">
+            <h1>Nicolas Zabala</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="sectionInfo" id="Información">
+
+            <div class="txtInfo">
+                <h2>Desarrollo de Software</h2>
+                <p>Hola, soy Nico. Actualmente estoy cursando el segundo año de la Tecnicatura Universitaria en
+                    Programación en UTN FRGP. Realicé proyectos académicos y cursos de programación y desarrollo web. Me
+                    entusiasma siempre aprender cosas nuevas y disfruto cada paso del proceso.</p>
+            </div>
+
+            <div>
+                <img src="img/img-perfil-3.jpeg" alt="Foto de perfil" class="fotoPerfil">
+            </div>
+        </section>
+
+        <section class="sectionConocimientos" id="conocimientos">
+
+            <div class="inconosSecCon">
+
+                <div class="iconoConocimiento">
+                    <img src="img/c++5.png" alt="c++ icon">
+                </div>
+
+                <div class="iconoConocimiento">
+                    <img src="img/csh3.png" alt="c# icon">
+                </div>
+
+                <div class="iconoConocimiento">
+                    <img src="img/servidor-sql.png" alt="sql icon">
+                </div>
+
+            </div>
+
+
+            <div class="txtConocimientos">
+                <h2>Conocimientos</h2>
+                <p>Tengo experiencia en programación con C++ y C#, así como en el manejo de bases de datos con SQL Server. También cuento con conocimientos en desarrollo web utilizando HTML y CSS, y manejo herramientas como Git y Visual Studio.</p>
+            </div>
+        </section>
+
+        <section class="sectionProy" id="proyectos">
+            <div class="h2Proy">
+                <h2>Proyectos</h2>
+            </div>
+
+            <div class="divProys">
+
+                <div class="proy">
+                    <div>
+                        <h3>Catálogo</h3>
+                        <img src="img/catalogoWinform.jpeg" alt="">
+                    </div>
+                    <div>
+                        <p>Proyecto realizado para la materia Programación III de la Tecnicatura Universitaria en
+                            Programación (UTN). Consiste en una aplicación de escritorio desarrollada con WinForms y
+                            .NET
+                            Framework en C#, conectada a una base de datos SQL. La aplicación permite gestionar los
+                            artículos de un catálogo comercial, incluyendo el listado general, la búsqueda por distintos
+                            criterios, el alta, modificación y eliminación de artículos, así como la visualización
+                            detallada
+                            de cada uno. </p>
+                        <a href="https://github.com/benitex-dev/tp-winform-equipo-11B" target="_blank">Ir al
+                            repositorio</a>
+                    </div>
+
+                </div>
+                <div class="proy">
+                    <div>
+                        <h3>Greta Moods</h3>
+                        <img src="img/greta.jpeg" alt="">
+                    </div>
+                    <div>
+                        <p>Proyecto desarrollado durante el curso de Desarrollo Web en Coderhouse. Consiste en un sitio
+                            web
+                            estático para un emprendimiento comercial, diseñado con HTML, CSS y preprocesado con SASS.
+                        </p>
+                        <a href="https://github.com/nicovyv/comision-999191043" target="_blank">Ir al repositorio</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="sectionEstudios" id="estudios">
+
+
+            <div class="estudios">
+                <div>
+                    <h2>Estudios</h2>
+                    <ul>
+                        <li>UTN.FRGP, Tecnicatura Universitaria en Programación - (2024-actualidad)</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Estudios Complementarios</h2>
+                    <ul>
+                        <li>Maxi Programa, Curso - Bases de Datos SQL (2025)</li>
+                        <li> UTN.BA, Curso - Desarrollo web en Bootstrap (2024) </li>
+                        <li>UTN.BA, Curso - Derarrollo Web en HTML5, CSS3 y Javascript (2023)</li>
+                        <li>UTN.BA, Curso - Derarrollo Web con Javascript (2023) </li>
+                        <li>Coderhouse, Curso - Derarrollo Web (2023)</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <footer id="footer">
+
+
+        <form action="" method="post">
+
+            <div class="formulario">
+                <h2>Formulario de Contacto</h2>
+                <label for="nombre">
+                    <span>Nombre</span>
+                    <input class="input-nombre" type="text" id="nombre">
+                </label>
+                <label for="email">
+                    <span>Email</span>
+                    <textarea placeholder="ejemplo@email.com"></textarea>
+                </label>
+                <label for="mensaje">
+                    <span>Mensaje</span>
+                    <textarea class="input-mensaje" placeholder="Escribe aquí..."></textarea>
+                </label>
+                <div class="enviar">
+                    <input type="submit" id="btnEnviar" onclick="mail(event)">
+                </div>
+            </div>
+
+        </form>
+
+        <div class="redes">
+            <h2>Redes</h2>
+            <div class="imgRedes">
+                <div class="vinculo">
+                    <a href="https://www.linkedin.com/in/nicolas-zabala-38593624a/" target="_blank">
+                        <img src="img/linkedin-icon-2.svg" alt="enlace Linkedin">
+                    </a>
+                </div>
+                <div class="vinculo">
+                    <a href="https://github.com/nicovyv/" target="_blank">
+                        <img src="img/gh.png" alt="enlace Github">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        function mail(event) {
+            event.preventDefault();
+            alert("No se pueden enviar mails ahora mismo, intentalo en otro momento");
+        }
+    </script>
+
+</body>
+
+</html>
